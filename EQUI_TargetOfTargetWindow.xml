@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes"/>
+	<!--AYA UI Note...By Javin B`Dorn@Tribunal-->
+	<!-- Original Xml Copyright (c) 2000 - 2006 Sony Online Entertaiment all rights reserved. -->
+	<!-- AYA UI Xml Code and Files ... -->
+	<!-- Copyright (c) 2002-2006 AYA NANASE all rights reserved. -->
+	<!-- Homepage http://jlamantia.com -->
+	<Gauge item="TsTName_DecalGaugeMelee">
+		<ScreenID>TsTName_Gauge</ScreenID>
+		<Font>6</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>2</X>
+			<Y>2</Y>
+		</Location>
+		<Size>
+			<CX>450</CX>
+			<CY>48</CY>
+			<!-- 11 -->
+		</Size>
+		<GaugeOffsetX>50</GaugeOffsetX>
+		<GaugeOffsetY>32</GaugeOffsetY>
+		<TextOffsetX>4</TextOffsetX>
+		<TextOffsetY>-4</TextOffsetY>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<!--<TooltipReference/>-->
+		<FillTint>
+			<R>240</R>
+			<G>0</G>
+			<B>0</B>
+		</FillTint>
+		<Text>Overlord Mata Muram</Text>
+		<AlignRight>true</AlignRight>
+		<TextColor>
+			<R>250</R>
+			<B>250</B>
+			<G>250</G>
+		</TextColor>
+		<LinesFillTint>
+			<R>0</R>
+			<G>240</G>
+			<B>240</B>
+		</LinesFillTint>
+		<DrawLinesFill>false</DrawLinesFill>
+		<EQType>27</EQType>
+		<GaugeDrawTemplate>
+			<Fill>AYANowCastNameGauge</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+	<Label item="TsT_LabelMelee">
+		<ScreenID>TsT_Label</ScreenID>
+		<EQType>120</EQType>
+		<Font>6</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>402</X>
+			<Y>-2</Y>
+		</Location>
+		<Size>
+			<CX>50</CX>
+			<CY>24</CY>
+		</Size>
+		<Text>100</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+	<StaticAnimation item="TsTName_DecalMelee">
+		<ScreenID>TsTDecal</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>462</CX>
+			<CY>24</CY>
+		</Size>
+		<Animation>AYATSTNameWindow</Animation>
+	</StaticAnimation>
+	<StaticAnimation item="TsT_DecalMelee">
+		<ScreenID>TsTDecal</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>-2</X>
+			<Y>26</Y>
+		</Location>
+		<Size>
+			<CX>504</CX>
+			<CY>30</CY>
+		</Size>
+		<Animation>AYATSTWindow</Animation>
+	</StaticAnimation>
+	<Label item="TargetOfTarget_HPLabel">
+		<ScreenID>TargetOfTarget_HPLabel</ScreenID>
+		<EQType>120</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>-200</X>
+			<Y>24</Y>
+		</Location>
+		<Size>
+			<CX>120</CX>
+			<CY>24</CY>
+		</Size>
+		<Text/>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+	<Label item="TargetOfTarget_HPPercLabel">
+		<ScreenID>TargetOfTarget_HPPercLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>-200</X>
+			<Y>24</Y>
+		</Location>
+		<Size>
+			<CX>32</CX>
+			<CY>24</CY>
+		</Size>
+		<Text>%</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Screen item="TargetOfTargetWindow">
+		<ScreenID>TargetOfTargetWindow</ScreenID>
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>1032</X>
+			<Y>484</Y>
+		</Location>
+		<Size>
+			<CX>460</CX>
+			<CY>56</CY>
+		</Size>
+		<Text/>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>true</Style_Transparent>
+		<TooltipReference/>
+		<DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
+		<Style_Titlebar>false</Style_Titlebar>
+		<Style_Closebox>false</Style_Closebox>
+		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Border>false</Style_Border>
+		<Style_Sizable>false</Style_Sizable>
+		<Pieces>TsTName_DecalMelee</Pieces>
+		<Pieces>TsT_DecalMelee</Pieces>
+		<Pieces>TsTName_DecalGaugeMelee</Pieces>
+		<Pieces>TsT_LabelMelee</Pieces>
+		<Pieces>TargetOfTarget_HPLabel</Pieces>
+		<Pieces>TargetOfTarget_HPPercLabel</Pieces>
+	</Screen>
+</XML>

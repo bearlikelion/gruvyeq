@@ -1,0 +1,115 @@
+<?xml version = "1.0"?>
+<XML ID = "EQInterfaceDefinitionLanguage">
+	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+
+
+	<Listbox item = "STORY_StoryList">
+		<ScreenID>StoryList</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<TooltipReference>List of story items.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<TopAnchorOffset>8</TopAnchorOffset>
+		<RightAnchorOffset>8</RightAnchorOffset>
+		<BottomAnchorOffset>252</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Border>true</Style_Border>
+		<Style_VScroll>true</Style_VScroll>
+		<Columns>
+			<Width>160</Width>
+			<Heading>Date</Heading>
+		</Columns>
+		<Columns>
+			<Width>200</Width>
+			<Heading>Title</Heading>
+		</Columns>
+	</Listbox>
+
+	<STMLbox item = "STORY_Display">
+		<ScreenID>Display</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<RelativePosition>true</RelativePosition>
+		<Style_VScroll>true</Style_VScroll>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<TopAnchorOffset>260</TopAnchorOffset>
+		<RightAnchorOffset>8</RightAnchorOffset>
+		<BottomAnchorOffset>60</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Border>true</Style_Border>
+	</STMLbox>
+
+	<Button item = "STORY_AutomaticCheckbox">
+		<ScreenID>AutomaticButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<TopAnchorOffset>48</TopAnchorOffset>
+		<RightAnchorOffset>40</RightAnchorOffset>
+		<BottomAnchorOffset>16</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>true</Style_Checkbox>
+		<Text></Text>
+		<Template>BDT_Checkbox</Template>
+	</Button>
+
+	<Label item = "STORY_AutomaticLabel">
+		<ScreenID>AutomaticLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>52</LeftAnchorOffset>
+		<TopAnchorOffset>48</TopAnchorOffset>
+		<RightAnchorOffset>8</RightAnchorOffset>
+		<BottomAnchorOffset>8</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Text>Automatically display when new item exists.</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+
+
+
+	<Screen item = "StoryWnd">
+		<ScreenID/>
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>100</X>
+			<Y>200</Y>
+		</Location>
+		<Size>
+			<CX>750</CX>
+			<CY>700</CY>
+		</Size>
+		<Text>Story Window</Text>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference>This window displays storyline items.</TooltipReference>
+		<DrawTemplate>WDT_Rounded</DrawTemplate>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Qmarkbox>true</Style_Qmarkbox>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>true</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>true</Style_Sizable>
+		<Pieces>STORY_StoryList</Pieces>
+		<Pieces>STORY_Display</Pieces>
+		<Pieces>STORY_AutomaticLabel</Pieces>
+		<Pieces>STORY_AutomaticCheckbox</Pieces>
+	</Screen>
+
+</XML>
