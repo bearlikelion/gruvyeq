@@ -2,7 +2,7 @@
 
 ![GruvyEQ Layout Example](Docs/example_image.png)
 
-Minimal EverQuest UI files based on AYA/Gruvbox variants.
+Minimal EverQuest UI files based on [AYAUI](https://www.eqinterface.com/downloads/fileinfo.php?id=5518) and [Gruvbox](https://github.com/morhetz/gruvbox).
 
 ## Install
 
@@ -20,6 +20,8 @@ Minimal EverQuest UI files based on AYA/Gruvbox variants.
 ```text
 /copylayout
 ```
+
+4. Reposition any windows you want and save your layout.
 
 ## Notes
 
