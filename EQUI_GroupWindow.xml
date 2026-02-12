@@ -2,125 +2,30 @@
 <XML ID="EQInterfaceDefinitionLanguage">
 	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes"/>
 	<!--AYA UI Note...By Javin B`Dorn@Tribunal-->
+	<!-- Minimal Variant - Simplified group window with clean aesthetic -->
 	<!-- Original Xml Copyright (c) 2000 - 2006 Sony Online Entertaiment all rights reserved. -->
 	<!-- AYA UI Xml Code and Files ... -->
 	<!-- Copyright (c) 2002-2006 AYA NANASE all rights reserved. -->
 	<!-- Homepage http://jlamantia.com -->
-	<!--  Begin Custom buttons for speaking indicators -->
-	<StaticAnimation item="A_Gauge_bg01">
-		<ScreenID>A_Gauge_bg01</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>46</X>
-			<Y>24</Y>
-		</Location>
-		<Size>
-			<CX>232</CX>
-			<CY>62</CY>
-		</Size>
-		<Animation>GaugeNewBack</Animation>
-	</StaticAnimation>
-	<StaticAnimation item="A_Gauge_bg02">
-		<ScreenID>A_Gauge_bg02</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>324</X>
-			<Y>24</Y>
-		</Location>
-		<Size>
-			<CX>232</CX>
-			<CY>62</CY>
-		</Size>
-		<Animation>GaugeNewBack</Animation>
-	</StaticAnimation>
-	<StaticAnimation item="A_Gauge_bg03">
-		<ScreenID>A_Gauge_bg03</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>604</X>
-			<Y>24</Y>
-		</Location>
-		<Size>
-			<CX>232</CX>
-			<CY>62</CY>
-		</Size>
-		<Animation>GaugeNewBack</Animation>
-	</StaticAnimation>
-	<StaticAnimation item="A_Gauge_bg04">
-		<ScreenID>A_Gauge_bg04</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>884</X>
-			<Y>24</Y>
-		</Location>
-		<Size>
-			<CX>232</CX>
-			<CY>62</CY>
-		</Size>
-		<Animation>GaugeNewBack</Animation>
-	</StaticAnimation>
-	<StaticAnimation item="A_Gauge_bg05">
-		<ScreenID>A_Gauge_bg05</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>1164</X>
-			<Y>24</Y>
-		</Location>
-		<Size>
-			<CX>232</CX>
-			<CY>62</CY>
-		</Size>
-		<Animation>GaugeNewBack</Animation>
-	</StaticAnimation>
-	<Ui2DAnimation item="Javin_Group_CheckBox">
-		<Frames>
-			<Texture>Javin_speakers.tga</Texture>
-			<Location>
-				<X>71</X>
-				<Y>91</Y>
-			</Location>
-			<Size>
-				<CX>9</CX>
-				<CY>9</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-		</Frames>
-	</Ui2DAnimation>
-	<!--  End Custom buttons for speaking indicators -->
-	<StaticAnimation item="CastDecalBox">
-		<ScreenID>NowCastName</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>258</X>
-			<Y>-4</Y>
-		</Location>
-		<Size>
-			<CX>812</CX>
-			<CY>24</CY>
-		</Size>
-		<Animation>SpellGaugeDecalBox</Animation>
-	</StaticAnimation>
+
+	<!-- GROUP BUTTONS -->
 	<Button item="GW_InviteButton">
 		<ScreenID>InviteButton</ScreenID>
 		<Font>6</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1266</X>
-			<Y>0</Y>
+			<X>1150</X>
+			<Y>2</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
-			<CY>22</CY>
+			<CX>50</CX>
+			<CY>18</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference>Select a player and click to invite into the group</TooltipReference>
 		<Style_Checkbox>false</Style_Checkbox>
-		<!--<RadioGroup/>-->
 		<ButtonDrawTemplate>
 			<Normal>Inv_b</Normal>
 			<Pressed>Inv_a</Pressed>
@@ -129,24 +34,24 @@
 			<PressedFlyby>Inv_b</PressedFlyby>
 		</ButtonDrawTemplate>
 	</Button>
+
 	<Button item="GW_DisbandButton">
 		<ScreenID>DisbandButton</ScreenID>
 		<Font>6</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1328</X>
-			<Y>0</Y>
+			<X>1205</X>
+			<Y>2</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
-			<CY>22</CY>
+			<CX>50</CX>
+			<CY>18</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference>Click to disband your target from the group</TooltipReference>
 		<Style_Checkbox>false</Style_Checkbox>
-		<!--<RadioGroup/>-->
 		<ButtonDrawTemplate>
 			<Normal>Dis_b</Normal>
 			<Pressed>Dis_a</Pressed>
@@ -155,24 +60,24 @@
 			<PressedFlyby>Dis_b</PressedFlyby>
 		</ButtonDrawTemplate>
 	</Button>
+
 	<Button item="GW_FollowButton">
 		<ScreenID>FollowButton</ScreenID>
 		<Font>6</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1266</X>
-			<Y>0</Y>
+			<X>1150</X>
+			<Y>2</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
-			<CY>22</CY>
+			<CX>50</CX>
+			<CY>18</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference>Accept an invitation to group</TooltipReference>
 		<Style_Checkbox>false</Style_Checkbox>
-		<!--<RadioGroup/>-->
 		<ButtonDrawTemplate>
 			<Normal>Fol_b</Normal>
 			<Pressed>Fol_a</Pressed>
@@ -181,24 +86,24 @@
 			<PressedFlyby>Fol_b</PressedFlyby>
 		</ButtonDrawTemplate>
 	</Button>
+
 	<Button item="GW_DeclineButton">
 		<ScreenID>DeclineButton</ScreenID>
 		<Font>6</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1328</X>
-			<Y>0</Y>
+			<X>1205</X>
+			<Y>2</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
-			<CY>22</CY>
+			<CX>50</CX>
+			<CY>18</CY>
 		</Size>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference>Refuse an invtitation to group</TooltipReference>
 		<Style_Checkbox>false</Style_Checkbox>
-		<!--<RadioGroup/>-->
 		<ButtonDrawTemplate>
 			<Normal>Dec_b</Normal>
 			<Pressed>Dec_a</Pressed>
@@ -207,6 +112,7 @@
 			<PressedFlyby>Dec_b</PressedFlyby>
 		</ButtonDrawTemplate>
 	</Button>
+
 	<Button item="GW_LFGButton">
 		<ScreenID>LFGButton</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -215,8 +121,8 @@
 			<Y>-200</Y>
 		</Location>
 		<Size>
-			<CX>52</CX>
-			<CY>52</CY>
+			<CX>40</CX>
+			<CY>40</CY>
 		</Size>
 		<Style_Checkbox>false</Style_Checkbox>
 		<TooltipReference>Open LFG Window</TooltipReference>
@@ -228,240 +134,10 @@
 			<PressedFlyby>A_LFGBtnPressedFlyby</PressedFlyby>
 		</ButtonDrawTemplate>
 	</Button>
-	<Label item="GW_PlayerPercent1">
-		<ScreenID>TargetPercentage</ScreenID>
-		<EQType>35</EQType>
-		<Font>6</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>200</X>
-			<Y>24</Y>
-		</Location>
-		<Size>
-			<CX>70</CX>
-			<CY>26</CY>
-		</Size>
-		<Text>0</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<AlignLeft>false</AlignLeft>
-	</Label>
-	<Label item="GW_PercentFig1">
-		<!--  <Font>6</Font>-->
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>130</X>
-			<Y>44</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<AlignLeft>false</AlignLeft>
-	</Label>
-	<Label item="GW_PlayerPercent2">
-		<ScreenID>TargetPercentage</ScreenID>
-		<EQType>36</EQType>
-		<Font>6</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>478</X>
-			<Y>24</Y>
-		</Location>
-		<Size>
-			<CX>70</CX>
-			<CY>26</CY>
-		</Size>
-		<Text>0</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<AlignLeft>false</AlignLeft>
-	</Label>
-	<Label item="GW_PercentFig2">
-		<!--<Font>6</Font>-->
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>462</X>
-			<Y>44</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<AlignLeft>false</AlignLeft>
-	</Label>
-	<Label item="GW_PlayerPercent3">
-		<ScreenID>TargetPercentage</ScreenID>
-		<EQType>37</EQType>
-		<Font>6</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>770</X>
-			<Y>24</Y>
-		</Location>
-		<Size>
-			<CX>58</CX>
-			<CY>26</CY>
-		</Size>
-		<Text>0</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<AlignLeft>false</AlignLeft>
-	</Label>
-	<Label item="GW_PercentFig3">
-		<!--<Font>6</Font>-->
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>682</X>
-			<Y>46</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<AlignLeft>false</AlignLeft>
-	</Label>
-	<Label item="GW_PlayerPercent4">
-		<ScreenID>TargetPercentage</ScreenID>
-		<EQType>38</EQType>
-		<Font>6</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>1038</X>
-			<Y>26</Y>
-		</Location>
-		<Size>
-			<CX>70</CX>
-			<CY>26</CY>
-		</Size>
-		<Text>0</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<AlignLeft>false</AlignLeft>
-	</Label>
-	<Label item="GW_PercentFig4">
-		<!--<Font>6</Font>-->
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>1184</X>
-			<Y>104</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<AlignLeft>false</AlignLeft>
-	</Label>
-	<Label item="GW_PlayerPercent5">
-		<ScreenID>TargetPercentage</ScreenID>
-		<EQType>39</EQType>
-		<Font>6</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>1318</X>
-			<Y>24</Y>
-		</Location>
-		<Size>
-			<CX>70</CX>
-			<CY>26</CY>
-		</Size>
-		<Text>0</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<AlignLeft>false</AlignLeft>
-	</Label>
-	<Label item="GW_PercentFig5">
-		<!--<Font>6</Font>-->
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>1436</X>
-			<Y>90</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<AlignLeft>false</AlignLeft>
-	</Label>
-	<!-- Advanced Group Testing -->
+
+	<!-- MEMBER 1 HP GAUGE -->
 	<Gauge item="GW_Gauge1">
 		<ScreenID>Gauge1</ScreenID>
-		<!--<Font>6</Font>-->
 		<TextColor>
 			<R>240</R>
 			<G>240</G>
@@ -469,154 +145,145 @@
 		</TextColor>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>28</X>
-			<Y>-10</Y>
+			<X>5</X>
+			<Y>5</Y>
 		</Location>
 		<Size>
-			<CX>246</CX>
-			<CY>76</CY>
+			<CX>240</CX>
+			<CY>16</CY>
 		</Size>
-		<TextOffsetX>28</TextOffsetX>
-		<TextOffsetY>32</TextOffsetY>
-		<GaugeOffsetX>40</GaugeOffsetX>
+		<TextOffsetX>-500</TextOffsetX>
+		<TextOffsetY>0</TextOffsetY>
+		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
 		<FillTint>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
+			<R>250</R>
+			<G>0</G>
+			<B>0</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>120</R>
-			<G>120</G>
-			<B>120</B>
-		</LinesFillTint>
-		<DrawLinesFill>TRUE</DrawLinesFill>
+		<DrawLinesFill>false</DrawLinesFill>
 		<EQType>11</EQType>
 		<GaugeDrawTemplate>
-			<Fill>Playergauge100</Fill>
-			<Lines>A_GaugeLines</Lines>
-			<LinesFill>Playergauge100Line</LinesFill>
+			<Fill>A_GaugeFill</Fill>
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 1 MANA GAUGE -->
 	<Gauge item="GW_ManaGauge1">
 		<ScreenID>ManaGauge1</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>70</X>
-			<Y>66</Y>
+			<X>5</X>
+			<Y>27</Y>
 		</Location>
 		<Size>
-			<CX>74</CX>
+			<CX>240</CX>
 			<CY>16</CY>
 		</Size>
-		<TextOffsetX>-300</TextOffsetX>
-		<TextOffsetY>28</TextOffsetY>
+		<TextOffsetX>-500</TextOffsetX>
 		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference/>
 		<FillTint>
 			<R>0</R>
 			<G>50</G>
 			<B>240</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
 		<EQType>31</EQType>
-		<AlignCenter>true</AlignCenter>
 		<GaugeDrawTemplate>
-			<Fill>A_TargetGaugeFill</Fill>
+			<Fill>A_GaugeFill</Fill>
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 1 STAMINA GAUGE -->
 	<Gauge item="GW_STAGauge1">
 		<ScreenID>STAGauge1</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>172</X>
-			<Y>66</Y>
+			<X>5</X>
+			<Y>49</Y>
 		</Location>
 		<Size>
-			<CX>74</CX>
+			<CX>240</CX>
 			<CY>16</CY>
 		</Size>
-		<TextOffsetX>-300</TextOffsetX>
-		<TextOffsetY>28</TextOffsetY>
+		<TextOffsetX>-500</TextOffsetX>
 		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference/>
 		<FillTint>
-			<R>220</R>
-			<G>150</G>
-			<B>0</B>
-		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
-		<DrawLinesFill>false</DrawLinesFill>
-		<EQType>36</EQType>
-		<AlignCenter>true</AlignCenter>
-		<GaugeDrawTemplate>
-			<Fill>A_TargetGaugeFill</Fill>
-		</GaugeDrawTemplate>
-	</Gauge>
-	<Gauge item="GW_PetGauge1##">
-		<ScreenID>PetGauge1</ScreenID>
-		<!--<Font>6</Font>-->
-		<TextColor>
 			<R>240</R>
 			<G>240</G>
-			<B>240</B>
-		</TextColor>
+			<B>0</B>
+		</FillTint>
+		<DrawLinesFill>false</DrawLinesFill>
+		<EQType>51</EQType>
+		<GaugeDrawTemplate>
+			<Fill>A_GaugeFill</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<!-- MEMBER 1 PET GAUGE -->
+	<Gauge item="GW_PetGauge1##">
+		<ScreenID>PetGauge1</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>68</X>
-			<Y>58</Y>
+			<X>180</X>
+			<Y>49</Y>
 		</Location>
 		<Size>
-			<CX>208</CX>
-			<CY>8</CY>
+			<CX>65</CX>
+			<CY>10</CY>
 		</Size>
 		<TextOffsetY>-100</TextOffsetY>
-		<GaugeOffsetY>-4</GaugeOffsetY>
+		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
 		<FillTint>
 			<R>0</R>
 			<G>250</G>
 			<B>0</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
-		<EQType>17</EQType>
+		<EQType>71</EQType>
 		<GaugeDrawTemplate>
 			<Fill>A_GaugeFill</Fill>
-			<!--<Lines>A_GaugeLines</Lines>-->
-			<!--<LinesFill>A_GaugeLinesFill</LinesFill>-->
-			<!--<EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>-->
-			<!--<EndCapRight>A_GaugeEndCapRight</EndCapRight>-->
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 1 HP PERCENTAGE -->
+	<Label item="GW_PlayerPercent1">
+		<ScreenID>TargetPercentage</ScreenID>
+		<EQType>35</EQType>
+		<Font>5</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>200</X>
+			<Y>5</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>16</CY>
+		</Size>
+		<Text>100%</Text>
+		<TextColor>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<!-- MEMBER 2 HP GAUGE -->
 	<Gauge item="GW_Gauge2">
 		<ScreenID>Gauge2</ScreenID>
-		<!--<Font>6</Font>-->
 		<TextColor>
 			<R>240</R>
 			<G>240</G>
@@ -624,154 +291,144 @@
 		</TextColor>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>306</X>
-			<Y>-10</Y>
+			<X>255</X>
+			<Y>5</Y>
 		</Location>
 		<Size>
-			<CX>246</CX>
-			<CY>76</CY>
+			<CX>240</CX>
+			<CY>16</CY>
 		</Size>
-		<TextOffsetX>28</TextOffsetX>
-		<TextOffsetY>32</TextOffsetY>
-		<GaugeOffsetX>40</GaugeOffsetX>
+		<TextOffsetX>-500</TextOffsetX>
+		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
 		<FillTint>
-			<R>230</R>
-			<G>230</G>
-			<B>230</B>
+			<R>250</R>
+			<G>0</G>
+			<B>0</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>120</R>
-			<G>120</G>
-			<B>120</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
 		<EQType>12</EQType>
 		<GaugeDrawTemplate>
-			<Fill>Playergauge100</Fill>
-			<Lines>A_GaugeLines</Lines>
-			<LinesFill>Playergauge100Line</LinesFill>
+			<Fill>A_GaugeFill</Fill>
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 2 MANA GAUGE -->
 	<Gauge item="GW_ManaGauge2">
 		<ScreenID>ManaGauge2</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>348</X>
-			<Y>66</Y>
+			<X>255</X>
+			<Y>27</Y>
 		</Location>
 		<Size>
-			<CX>74</CX>
+			<CX>240</CX>
 			<CY>16</CY>
 		</Size>
-		<TextOffsetX>-300</TextOffsetX>
-		<TextOffsetY>28</TextOffsetY>
+		<TextOffsetX>-500</TextOffsetX>
 		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference/>
 		<FillTint>
 			<R>0</R>
 			<G>50</G>
 			<B>240</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
 		<EQType>32</EQType>
-		<AlignCenter>true</AlignCenter>
 		<GaugeDrawTemplate>
-			<Fill>A_TargetGaugeFill</Fill>
+			<Fill>A_GaugeFill</Fill>
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 2 STAMINA GAUGE -->
 	<Gauge item="GW_STAGauge2">
 		<ScreenID>STAGauge2</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>450</X>
-			<Y>66</Y>
+			<X>255</X>
+			<Y>49</Y>
 		</Location>
 		<Size>
-			<CX>74</CX>
+			<CX>240</CX>
 			<CY>16</CY>
 		</Size>
-		<TextOffsetX>-300</TextOffsetX>
-		<TextOffsetY>28</TextOffsetY>
+		<TextOffsetX>-500</TextOffsetX>
 		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference/>
 		<FillTint>
-			<R>220</R>
-			<G>150</G>
-			<B>0</B>
-		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
-		<DrawLinesFill>false</DrawLinesFill>
-		<EQType>37</EQType>
-		<AlignCenter>true</AlignCenter>
-		<GaugeDrawTemplate>
-			<Fill>A_TargetGaugeFill</Fill>
-		</GaugeDrawTemplate>
-	</Gauge>
-	<Gauge item="GW_PetGauge2##">
-		<ScreenID>PetGauge2</ScreenID>
-		<!--<Font>6</Font>-->
-		<TextColor>
 			<R>240</R>
 			<G>240</G>
-			<B>240</B>
-		</TextColor>
+			<B>0</B>
+		</FillTint>
+		<DrawLinesFill>false</DrawLinesFill>
+		<EQType>52</EQType>
+		<GaugeDrawTemplate>
+			<Fill>A_GaugeFill</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<!-- MEMBER 2 PET GAUGE -->
+	<Gauge item="GW_PetGauge2##">
+		<ScreenID>PetGauge2</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>346</X>
-			<Y>58</Y>
+			<X>430</X>
+			<Y>49</Y>
 		</Location>
 		<Size>
-			<CX>208</CX>
-			<CY>8</CY>
+			<CX>65</CX>
+			<CY>10</CY>
 		</Size>
 		<TextOffsetY>-100</TextOffsetY>
-		<GaugeOffsetY>-4</GaugeOffsetY>
+		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>true</Style_Transparent>
-		<!--<TooltipReference/>-->
+		<Style_Transparent>false</Style_Transparent>
 		<FillTint>
 			<R>0</R>
 			<G>250</G>
 			<B>0</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
-		<EQType>18</EQType>
+		<EQType>72</EQType>
 		<GaugeDrawTemplate>
 			<Fill>A_GaugeFill</Fill>
-			<!--<Lines>A_GaugeLines</Lines>-->
-			<!--<LinesFill>A_GaugeLinesFill</LinesFill>-->
-			<!--<EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>-->
-			<!--<EndCapRight>A_GaugeEndCapRight</EndCapRight>-->
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 2 HP PERCENTAGE -->
+	<Label item="GW_PlayerPercent2">
+		<ScreenID>TargetPercentage</ScreenID>
+		<EQType>36</EQType>
+		<Font>5</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>450</X>
+			<Y>5</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>16</CY>
+		</Size>
+		<Text>100%</Text>
+		<TextColor>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<!-- MEMBER 3 HP GAUGE -->
 	<Gauge item="GW_Gauge3">
 		<ScreenID>Gauge3</ScreenID>
-		<!--<Font>6</Font>-->
 		<TextColor>
 			<R>240</R>
 			<G>240</G>
@@ -779,154 +436,144 @@
 		</TextColor>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>586</X>
-			<Y>-10</Y>
+			<X>505</X>
+			<Y>5</Y>
 		</Location>
 		<Size>
-			<CX>246</CX>
-			<CY>76</CY>
+			<CX>240</CX>
+			<CY>16</CY>
 		</Size>
-		<TextOffsetX>28</TextOffsetX>
-		<TextOffsetY>32</TextOffsetY>
-		<GaugeOffsetX>40</GaugeOffsetX>
+		<TextOffsetX>-500</TextOffsetX>
+		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
 		<FillTint>
-			<R>230</R>
-			<G>230</G>
-			<B>230</B>
+			<R>250</R>
+			<G>0</G>
+			<B>0</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>120</R>
-			<G>120</G>
-			<B>120</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
 		<EQType>13</EQType>
 		<GaugeDrawTemplate>
-			<Fill>Playergauge100</Fill>
-			<Lines>A_GaugeLines</Lines>
-			<LinesFill>Playergauge100Line</LinesFill>
+			<Fill>A_GaugeFill</Fill>
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 3 MANA GAUGE -->
 	<Gauge item="GW_ManaGauge3">
 		<ScreenID>ManaGauge3</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>628</X>
-			<Y>66</Y>
+			<X>505</X>
+			<Y>27</Y>
 		</Location>
 		<Size>
-			<CX>74</CX>
+			<CX>240</CX>
 			<CY>16</CY>
 		</Size>
-		<TextOffsetX>-300</TextOffsetX>
-		<TextOffsetY>28</TextOffsetY>
+		<TextOffsetX>-500</TextOffsetX>
 		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference/>
 		<FillTint>
 			<R>0</R>
 			<G>50</G>
 			<B>240</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
 		<EQType>33</EQType>
-		<AlignCenter>true</AlignCenter>
 		<GaugeDrawTemplate>
-			<Fill>A_TargetGaugeFill</Fill>
+			<Fill>A_GaugeFill</Fill>
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 3 STAMINA GAUGE -->
 	<Gauge item="GW_STAGauge3">
 		<ScreenID>STAGauge3</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>730</X>
-			<Y>66</Y>
+			<X>505</X>
+			<Y>49</Y>
 		</Location>
 		<Size>
-			<CX>74</CX>
+			<CX>240</CX>
 			<CY>16</CY>
 		</Size>
-		<TextOffsetX>-300</TextOffsetX>
-		<TextOffsetY>28</TextOffsetY>
+		<TextOffsetX>-500</TextOffsetX>
 		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference/>
 		<FillTint>
-			<R>220</R>
-			<G>150</G>
-			<B>0</B>
-		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
-		<DrawLinesFill>false</DrawLinesFill>
-		<EQType>38</EQType>
-		<AlignCenter>true</AlignCenter>
-		<GaugeDrawTemplate>
-			<Fill>A_TargetGaugeFill</Fill>
-		</GaugeDrawTemplate>
-	</Gauge>
-	<Gauge item="GW_PetGauge3##">
-		<ScreenID>PetGauge3</ScreenID>
-		<!--<Font>6</Font>-->
-		<TextColor>
 			<R>240</R>
 			<G>240</G>
-			<B>240</B>
-		</TextColor>
+			<B>0</B>
+		</FillTint>
+		<DrawLinesFill>false</DrawLinesFill>
+		<EQType>53</EQType>
+		<GaugeDrawTemplate>
+			<Fill>A_GaugeFill</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<!-- MEMBER 3 PET GAUGE -->
+	<Gauge item="GW_PetGauge3##">
+		<ScreenID>PetGauge3</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>626</X>
-			<Y>58</Y>
+			<X>680</X>
+			<Y>49</Y>
 		</Location>
 		<Size>
-			<CX>208</CX>
-			<CY>8</CY>
+			<CX>65</CX>
+			<CY>10</CY>
 		</Size>
 		<TextOffsetY>-100</TextOffsetY>
-		<GaugeOffsetY>-4</GaugeOffsetY>
+		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
 		<FillTint>
 			<R>0</R>
 			<G>250</G>
 			<B>0</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
-		<EQType>19</EQType>
+		<EQType>73</EQType>
 		<GaugeDrawTemplate>
 			<Fill>A_GaugeFill</Fill>
-			<!--<Lines>A_GaugeLines</Lines>-->
-			<!--<LinesFill>A_GaugeLinesFill</LinesFill>-->
-			<!--<EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>-->
-			<!--<EndCapRight>A_GaugeEndCapRight</EndCapRight>-->
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 3 HP PERCENTAGE -->
+	<Label item="GW_PlayerPercent3">
+		<ScreenID>TargetPercentage</ScreenID>
+		<EQType>37</EQType>
+		<Font>5</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>700</X>
+			<Y>5</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>16</CY>
+		</Size>
+		<Text>100%</Text>
+		<TextColor>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<!-- MEMBER 4 HP GAUGE -->
 	<Gauge item="GW_Gauge4">
 		<ScreenID>Gauge4</ScreenID>
-		<!--<Font>6</Font>-->
 		<TextColor>
 			<R>240</R>
 			<G>240</G>
@@ -934,155 +581,144 @@
 		</TextColor>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>866</X>
-			<Y>-10</Y>
+			<X>755</X>
+			<Y>5</Y>
 		</Location>
 		<Size>
-			<CX>246</CX>
-			<CY>76</CY>
+			<CX>240</CX>
+			<CY>16</CY>
 		</Size>
-		<TextOffsetX>28</TextOffsetX>
-		<TextOffsetY>32</TextOffsetY>
-		<GaugeOffsetX>40</GaugeOffsetX>
+		<TextOffsetX>-500</TextOffsetX>
+		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
 		<FillTint>
-			<R>230</R>
-			<G>230</G>
-			<B>230</B>
+			<R>250</R>
+			<G>0</G>
+			<B>0</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>120</R>
-			<G>120</G>
-			<B>120</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
 		<EQType>14</EQType>
 		<GaugeDrawTemplate>
-			<Fill>Playergauge100</Fill>
-			<Lines>A_GaugeLines</Lines>
-			<LinesFill>Playergauge100Line</LinesFill>
-			<!--    <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft><EndCapRight>A_GaugeEndCapRight</EndCapRight>-->
+			<Fill>A_GaugeFill</Fill>
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 4 MANA GAUGE -->
 	<Gauge item="GW_ManaGauge4">
 		<ScreenID>ManaGauge4</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>908</X>
-			<Y>66</Y>
+			<X>755</X>
+			<Y>27</Y>
 		</Location>
 		<Size>
-			<CX>74</CX>
+			<CX>240</CX>
 			<CY>16</CY>
 		</Size>
-		<TextOffsetX>-300</TextOffsetX>
-		<TextOffsetY>28</TextOffsetY>
+		<TextOffsetX>-500</TextOffsetX>
 		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference/>
 		<FillTint>
 			<R>0</R>
 			<G>50</G>
 			<B>240</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
 		<EQType>34</EQType>
-		<AlignCenter>true</AlignCenter>
 		<GaugeDrawTemplate>
-			<Fill>A_TargetGaugeFill</Fill>
+			<Fill>A_GaugeFill</Fill>
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 4 STAMINA GAUGE -->
 	<Gauge item="GW_STAGauge4">
 		<ScreenID>STAGauge4</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1010</X>
-			<Y>66</Y>
+			<X>755</X>
+			<Y>49</Y>
 		</Location>
 		<Size>
-			<CX>74</CX>
+			<CX>240</CX>
 			<CY>16</CY>
 		</Size>
-		<TextOffsetX>-300</TextOffsetX>
-		<TextOffsetY>28</TextOffsetY>
+		<TextOffsetX>-500</TextOffsetX>
 		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference/>
 		<FillTint>
-			<R>220</R>
-			<G>150</G>
-			<B>0</B>
-		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
-		<DrawLinesFill>false</DrawLinesFill>
-		<EQType>39</EQType>
-		<AlignCenter>true</AlignCenter>
-		<GaugeDrawTemplate>
-			<Fill>A_TargetGaugeFill</Fill>
-		</GaugeDrawTemplate>
-	</Gauge>
-	<Gauge item="GW_PetGauge4##">
-		<ScreenID>PetGauge4</ScreenID>
-		<!--<Font>6</Font>-->
-		<TextColor>
 			<R>240</R>
 			<G>240</G>
-			<B>240</B>
-		</TextColor>
+			<B>0</B>
+		</FillTint>
+		<DrawLinesFill>false</DrawLinesFill>
+		<EQType>54</EQType>
+		<GaugeDrawTemplate>
+			<Fill>A_GaugeFill</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<!-- MEMBER 4 PET GAUGE -->
+	<Gauge item="GW_PetGauge4##">
+		<ScreenID>PetGauge4</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>906</X>
-			<Y>58</Y>
+			<X>930</X>
+			<Y>49</Y>
 		</Location>
 		<Size>
-			<CX>208</CX>
-			<CY>8</CY>
+			<CX>65</CX>
+			<CY>10</CY>
 		</Size>
 		<TextOffsetY>-100</TextOffsetY>
-		<GaugeOffsetY>-4</GaugeOffsetY>
+		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
 		<FillTint>
 			<R>0</R>
 			<G>250</G>
 			<B>0</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
-		<EQType>20</EQType>
+		<EQType>74</EQType>
 		<GaugeDrawTemplate>
 			<Fill>A_GaugeFill</Fill>
-			<!--<Lines>A_GaugeLines</Lines>-->
-			<!--<LinesFill>A_GaugeLinesFill</LinesFill>-->
-			<!--<EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>-->
-			<!--<EndCapRight>A_GaugeEndCapRight</EndCapRight>-->
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 4 HP PERCENTAGE -->
+	<Label item="GW_PlayerPercent4">
+		<ScreenID>TargetPercentage</ScreenID>
+		<EQType>38</EQType>
+		<Font>5</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>950</X>
+			<Y>5</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>16</CY>
+		</Size>
+		<Text>100%</Text>
+		<TextColor>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<!-- MEMBER 5 HP GAUGE -->
 	<Gauge item="GW_Gauge5">
 		<ScreenID>Gauge5</ScreenID>
-		<!--<Font>6</Font>-->
 		<TextColor>
 			<R>240</R>
 			<G>240</G>
@@ -1090,712 +726,166 @@
 		</TextColor>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1146</X>
-			<Y>-10</Y>
+			<X>1005</X>
+			<Y>5</Y>
 		</Location>
 		<Size>
-			<CX>246</CX>
-			<CY>76</CY>
+			<CX>240</CX>
+			<CY>16</CY>
 		</Size>
-		<TextOffsetX>28</TextOffsetX>
-		<TextOffsetY>32</TextOffsetY>
-		<GaugeOffsetX>40</GaugeOffsetX>
+		<TextOffsetX>-500</TextOffsetX>
+		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
 		<FillTint>
-			<R>230</R>
-			<G>230</G>
-			<B>230</B>
+			<R>250</R>
+			<G>0</G>
+			<B>0</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>120</R>
-			<G>120</G>
-			<B>120</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
 		<EQType>15</EQType>
 		<GaugeDrawTemplate>
-			<Fill>Playergauge100</Fill>
-			<Lines>A_GaugeLines</Lines>
-			<LinesFill>Playergauge100Line</LinesFill>
+			<Fill>A_GaugeFill</Fill>
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 5 MANA GAUGE -->
 	<Gauge item="GW_ManaGauge5">
 		<ScreenID>ManaGauge5</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1188</X>
-			<Y>66</Y>
+			<X>1005</X>
+			<Y>27</Y>
 		</Location>
 		<Size>
-			<CX>74</CX>
+			<CX>240</CX>
 			<CY>16</CY>
 		</Size>
-		<TextOffsetX>-300</TextOffsetX>
-		<TextOffsetY>28</TextOffsetY>
+		<TextOffsetX>-500</TextOffsetX>
 		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference/>
 		<FillTint>
 			<R>0</R>
 			<G>50</G>
 			<B>240</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
 		<EQType>35</EQType>
-		<AlignCenter>true</AlignCenter>
 		<GaugeDrawTemplate>
-			<Fill>A_TargetGaugeFill</Fill>
+			<Fill>A_GaugeFill</Fill>
 		</GaugeDrawTemplate>
 	</Gauge>
+
+	<!-- MEMBER 5 STAMINA GAUGE -->
 	<Gauge item="GW_STAGauge5">
 		<ScreenID>STAGauge5</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1290</X>
-			<Y>66</Y>
+			<X>1005</X>
+			<Y>49</Y>
 		</Location>
 		<Size>
-			<CX>74</CX>
+			<CX>240</CX>
 			<CY>16</CY>
 		</Size>
-		<TextOffsetX>-300</TextOffsetX>
-		<TextOffsetY>28</TextOffsetY>
+		<TextOffsetX>-500</TextOffsetX>
 		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference/>
 		<FillTint>
-			<R>220</R>
-			<G>150</G>
-			<B>0</B>
-		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
-		<DrawLinesFill>false</DrawLinesFill>
-		<EQType>40</EQType>
-		<AlignCenter>true</AlignCenter>
-		<GaugeDrawTemplate>
-			<Fill>A_TargetGaugeFill</Fill>
-		</GaugeDrawTemplate>
-	</Gauge>
-	<Gauge item="GW_PetGauge5##">
-		<ScreenID>PetGauge5</ScreenID>
-		<!--<Font>6</Font>-->
-		<TextColor>
 			<R>240</R>
 			<G>240</G>
-			<B>240</B>
-		</TextColor>
+			<B>0</B>
+		</FillTint>
+		<DrawLinesFill>false</DrawLinesFill>
+		<EQType>55</EQType>
+		<GaugeDrawTemplate>
+			<Fill>A_GaugeFill</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<!-- MEMBER 5 PET GAUGE -->
+	<Gauge item="GW_PetGauge5##">
+		<ScreenID>PetGauge5</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1186</X>
-			<Y>58</Y>
+			<X>1180</X>
+			<Y>49</Y>
 		</Location>
 		<Size>
-			<CX>208</CX>
-			<CY>8</CY>
+			<CX>65</CX>
+			<CY>10</CY>
 		</Size>
-		<TextOffsetY>-200</TextOffsetY>
-		<GaugeOffsetY>-4</GaugeOffsetY>
+		<TextOffsetY>-100</TextOffsetY>
+		<GaugeOffsetY>0</GaugeOffsetY>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
 		<FillTint>
 			<R>0</R>
 			<G>250</G>
 			<B>0</B>
 		</FillTint>
-		<LinesFillTint>
-			<R>220</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
 		<DrawLinesFill>false</DrawLinesFill>
-		<EQType>21</EQType>
+		<EQType>75</EQType>
 		<GaugeDrawTemplate>
 			<Fill>A_GaugeFill</Fill>
-			<!--<Lines>A_GaugeLines</Lines>-->
-			<!--<LinesFill>A_GaugeLinesFill</LinesFill>-->
-			<!--<EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>-->
-			<!--<EndCapRight>A_GaugeEndCapRight</EndCapRight>-->
 		</GaugeDrawTemplate>
 	</Gauge>
-	<!-- Group END -->
-	<Label item="GW_HPLabel1">
-		<ScreenID>HPLabel1</ScreenID>
-		<EQType>35</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>-128</X>
-			<Y>-216</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>Playername123456</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-	</Label>
-	<Label item="GW_HPPercLabel1">
-		<ScreenID>HPPercLabel1</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>-128</X>
-			<Y>-216</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-	</Label>
-	<Label item="GW_ManaLabel1">
-		<ScreenID>ManaLabel1</ScreenID>
-		<EQType>139</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>70</X>
-			<Y>62</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>16</CY>
-		</Size>
-		<Text>100</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<Font>.9</Font>
-	</Label>
-	<Label item="GW_ManaPercLabel1">
-		<ScreenID>ManaPercLabel1</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>132</X>
-			<Y>-72</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>40</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-		<Font>6</Font>
-	</Label>
-	<Label item="GW_STALabel1">
-		<ScreenID>STALabel1</ScreenID>
-		<EQType>144</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>172</X>
-			<Y>62</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>16</CY>
-		</Size>
-		<Text>100</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<Font>.9</Font>
-	</Label>
-	<Label item="GW_STAPercLabel1">
-		<ScreenID>STAPercLabel1</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>234</X>
-			<Y>-72</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>40</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-		<Font>6</Font>
-	</Label>
-	<Label item="GW_HPLabel2">
-		<ScreenID>HPLabel2</ScreenID>
-		<EQType>36</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>-128</X>
-			<Y>-216</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>Playername123456</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-	</Label>
-	<Label item="GW_HPPercLabel2">
-		<ScreenID>HPPercLabel2</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>-128</X>
-			<Y>-216</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-	</Label>
-	<Label item="GW_ManaLabel2">
-		<ScreenID>ManaLabel2</ScreenID>
-		<EQType>140</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>348</X>
-			<Y>62</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>16</CY>
-		</Size>
-		<Text>100</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<Font>.9</Font>
-	</Label>
-	<Label item="GW_ManaPercLabel2">
-		<ScreenID>ManaPercLabel2</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>376</X>
-			<Y>-72</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>40</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-		<Font>6</Font>
-	</Label>
-	<Label item="GW_STALabel2">
-		<ScreenID>STALabel2</ScreenID>
-		<EQType>145</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>450</X>
-			<Y>62</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>16</CY>
-		</Size>
-		<Text>100</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<Font>.9</Font>
-	</Label>
-	<Label item="GW_STAPercLabel2">
-		<ScreenID>STAPercLabel2</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>476</X>
-			<Y>-72</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>40</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-		<Font>6</Font>
-	</Label>
-	<Label item="GW_HPLabel3">
-		<ScreenID>HPLabel3</ScreenID>
-		<EQType>37</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>-128</X>
-			<Y>-216</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>Playername123456</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-	</Label>
-	<Label item="GW_HPPercLabel3">
-		<ScreenID>HPPercLabel3</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>-128</X>
-			<Y>-216</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-	</Label>
-	<Label item="GW_ManaLabel3">
-		<ScreenID>ManaLabel3</ScreenID>
-		<EQType>141</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>628</X>
-			<Y>62</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>16</CY>
-		</Size>
-		<Text>100</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<Font>.9</Font>
-	</Label>
-	<Label item="GW_ManaPercLabel3">
-		<ScreenID>ManaPercLabel3</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>640</X>
-			<Y>-72</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>40</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-		<Font>6</Font>
-	</Label>
-	<Label item="GW_STALabel3">
-		<ScreenID>STALabel3</ScreenID>
-		<EQType>146</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>730</X>
-			<Y>62</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>16</CY>
-		</Size>
-		<Text>100</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<Font>.9</Font>
-	</Label>
-	<Label item="GW_STAPercLabel3">
-		<ScreenID>STAPercLabel3</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>716</X>
-			<Y>-72</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>40</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-		<Font>6</Font>
-	</Label>
-	<Label item="GW_HPLabel4">
-		<ScreenID>HPLabel4</ScreenID>
-		<EQType>38</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>-128</X>
-			<Y>-216</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>Playername123456</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-	</Label>
-	<Label item="GW_HPPercLabel4">
-		<ScreenID>HPPercLabel4</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>-128</X>
-			<Y>-216</Y>
-		</Location>
-		<Size>
-			<CX>2</CX>
-			<CY>2</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-	</Label>
-	<Label item="GW_ManaLabel4">
-		<ScreenID>ManaLabel4</ScreenID>
-		<EQType>142</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>908</X>
-			<Y>62</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>16</CY>
-		</Size>
-		<Text>100</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<Font>.9</Font>
-	</Label>
-	<Label item="GW_ManaPercLabel4">
-		<ScreenID>ManaPercLabel4</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>856</X>
-			<Y>-72</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>40</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-		<Font>6</Font>
-	</Label>
-	<Label item="GW_STALabel4">
-		<ScreenID>STALabel4</ScreenID>
-		<EQType>147</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>1010</X>
-			<Y>62</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>16</CY>
-		</Size>
-		<Text>100</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<Font>.9</Font>
-	</Label>
-	<Label item="GW_STAPercLabel4">
-		<ScreenID>STAPercLabel4</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>956</X>
-			<Y>-72</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>40</CY>
-		</Size>
-		<Text>%</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-		<Font>6</Font>
-	</Label>
-	<Label item="GW_HPLabel5">
-		<ScreenID>HPLabel5</ScreenID>
+
+	<!-- MEMBER 5 HP PERCENTAGE -->
+	<Label item="GW_PlayerPercent5">
+		<ScreenID>TargetPercentage</ScreenID>
 		<EQType>39</EQType>
+		<Font>5</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>-128</X>
-			<Y>-216</Y>
+			<X>1200</X>
+			<Y>5</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>16</CY>
+		</Size>
+		<Text>100%</Text>
+		<TextColor>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<!-- HIDDEN LABELS (Required but not displayed) -->
+	<Label item="GW_PercentFig1">
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>-200</X>
+			<Y>-200</Y>
 		</Location>
 		<Size>
 			<CX>2</CX>
 			<CY>2</CY>
 		</Size>
-		<Text>Playername123456</Text>
+		<Text>%</Text>
 		<TextColor>
 			<R>235</R>
 			<G>219</G>
 			<B>178</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
 	</Label>
-	<Label item="GW_HPPercLabel5">
-		<ScreenID>HPPercLabel5</ScreenID>
+
+	<Label item="GW_PercentFig2">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>-128</X>
-			<Y>-216</Y>
+			<X>-200</X>
+			<Y>-200</Y>
 		</Location>
 		<Size>
 			<CX>2</CX>
@@ -1808,901 +898,66 @@
 			<B>178</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
 	</Label>
-	<Label item="GW_ManaLabel5">
-		<ScreenID>ManaLabel5</ScreenID>
-		<EQType>143</EQType>
+
+	<Label item="GW_PercentFig3">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1188</X>
-			<Y>62</Y>
+			<X>-200</X>
+			<Y>-200</Y>
 		</Location>
 		<Size>
-			<CX>100</CX>
-			<CY>16</CY>
-		</Size>
-		<Text>100</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<Font>.9</Font>
-	</Label>
-	<Label item="GW_ManaPercLabel5">
-		<ScreenID>ManaPercLabel5</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>1096</X>
-			<Y>-72</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>40</CY>
+			<CX>2</CX>
+			<CY>2</CY>
 		</Size>
 		<Text>%</Text>
 		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-		<Font>6</Font>
 	</Label>
-	<Label item="GW_STALabel5">
-		<ScreenID>STALabel5</ScreenID>
-		<EQType>148</EQType>
+
+	<Label item="GW_PercentFig4">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>1290</X>
-			<Y>62</Y>
+			<X>-200</X>
+			<Y>-200</Y>
 		</Location>
 		<Size>
-			<CX>100</CX>
-			<CY>16</CY>
-		</Size>
-		<Text>100</Text>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
-		<Font>.9</Font>
-	</Label>
-	<Label item="GW_STAPercLabel5">
-		<ScreenID>STAPercLabel5</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>1196</X>
-			<Y>-72</Y>
-		</Location>
-		<Size>
-			<CX>100</CX>
-			<CY>40</CY>
+			<CX>2</CX>
+			<CY>2</CY>
 		</Size>
 		<Text>%</Text>
 		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-		<AlignRight>false</AlignRight>
-		<Font>6</Font>
-	</Label>
-	<Label item="Group_Name_1">
-		<ScreenID>Group1</ScreenID>
-		<Font>6</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>136</X>
-			<Y>8</Y>
-		</Location>
-		<Text>Group (F2)</Text>
-		<Size>
-			<CX>256</CX>
-			<CY>28</CY>
-		</Size>
-		<Text/>
-		<TextColor>
 			<R>235</R>
 			<G>219</G>
 			<B>178</B>
 		</TextColor>
-		<EQType>30</EQType>
 		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
 	</Label>
-	<Label item="Group_Name_2">
-		<ScreenID>Group2</ScreenID>
-		<Font>6</Font>
+
+	<Label item="GW_PercentFig5">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>418</X>
-			<Y>14</Y>
-		</Location>
-		<Text>Group (F3)</Text>
-		<Size>
-			<CX>240</CX>
-			<CY>28</CY>
-		</Size>
-		<Text/>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<EQType>31</EQType>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-	</Label>
-	<Label item="Group_Name_3">
-		<ScreenID>Group3</ScreenID>
-		<Font>6</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>684</X>
-			<Y>14</Y>
-		</Location>
-		<Text>Group (F4)</Text>
-		<Size>
-			<CX>240</CX>
-			<CY>28</CY>
-		</Size>
-		<Text/>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<EQType>32</EQType>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-	</Label>
-	<Label item="Group_Name_4">
-		<ScreenID>Group4</ScreenID>
-		<Font>6</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>946</X>
-			<Y>14</Y>
-		</Location>
-		<Text>Group (F5)</Text>
-		<Size>
-			<CX>240</CX>
-			<CY>28</CY>
-		</Size>
-		<Text/>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<EQType>33</EQType>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-	</Label>
-	<Label item="Group_Name_5">
-		<ScreenID>Group5</ScreenID>
-		<Font>6</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>1198</X>
-			<Y>14</Y>
-		</Location>
-		<Text>Group (F6)</Text>
-		<Size>
-			<CX>240</CX>
-			<CY>28</CY>
-		</Size>
-		<Text/>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<EQType>34</EQType>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>false</AlignCenter>
-	</Label>
-	<Gauge item="Group_Cast">
-		<ScreenID>TargetCast</ScreenID>
-		<!--<Font>6</Font>-->
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>232</X>
-			<Y>-14</Y>
+			<X>-200</X>
+			<Y>-200</Y>
 		</Location>
 		<Size>
-			<CX>878</CX>
-			<CY>80</CY>
+			<CX>2</CX>
+			<CY>2</CY>
 		</Size>
-		<GaugeOffsetY>0</GaugeOffsetY>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
-		<FillTint>
-			<R>50</R>
-			<G>50</G>
-			<B>250</B>
-		</FillTint>
-		<LinesFillTint>
-			<R>0</R>
-			<G>220</G>
-			<B>0</B>
-		</LinesFillTint>
-		<DrawLinesFill>false</DrawLinesFill>
-		<EQType>7</EQType>
-		<GaugeDrawTemplate>
-			<Fill>XpFill</Fill>
-			<LinesFill>XpLineFill</LinesFill>
-		</GaugeDrawTemplate>
-	</Gauge>
-	<Label item="NowCastSpell">
-		<ScreenID>NowCastSpell</ScreenID>
-		<EQType>134</EQType>
-		<RelativePosition>true</RelativePosition>
-		<Font>6</Font>
-		<Location>
-			<X>470</X>
-			<Y>-6</Y>
-		</Location>
-		<Size>
-			<CX>400</CX>
-			<CY>30</CY>
-		</Size>
-		<Text/>
+		<Text>%</Text>
 		<TextColor>
 			<R>235</R>
 			<G>219</G>
 			<B>178</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
-		<AlignCenter>true</AlignCenter>
-		<AlignRight>false</AlignRight>
 	</Label>
-	<Button item="GW_GroupRoleTank1">
-		<ScreenID>GroupRoleTank1</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_TankSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>22</CX>
-			<CY>22</CY>
-		</Size>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-	</Button>
-	<Button item="GW_GroupRoleAssist1">
-		<ScreenID>GroupRoleAssist1</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_AssistSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-		<Location>
-			<X>0</X>
-			<Y>22</Y>
-		</Location>
-	</Button>
-	<Button item="GW_GroupRolePuller1">
-		<ScreenID>GroupRolePuller1</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_PullerSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-		<Location>
-			<X>0</X>
-			<Y>22</Y>
-		</Location>
-	</Button>
-	<Button item="GW_GroupRoleMarkNPC1">
-		<ScreenID>GroupRoleMarkNPC1</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_MarkNPCSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-		<Location>
-			<X>0</X>
-			<Y>22</Y>
-		</Location>
-	</Button>
-	<TileLayoutBox item="GW_GroupRoles1">
-		<ScreenID>GW_GroupRoles1</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<TopAnchorOffset>28</TopAnchorOffset>
-		<BottomAnchorOffset>74</BottomAnchorOffset>
-		<LeftAnchorOffset>1398</LeftAnchorOffset>
-		<RightAnchorOffset>1350</RightAnchorOffset>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<Style_Transparent>true</Style_Transparent>
-		<Spacing>2</Spacing>
-		<SecondarySpacing>2</SecondarySpacing>
-		<HorizontalFirst>false</HorizontalFirst>
-		<FirstPieceTemplate>true</FirstPieceTemplate>
-		<Pieces>GW_GroupRoleTank1</Pieces>
-		<Pieces>GW_GroupRoleAssist1</Pieces>
-		<Pieces>GW_GroupRolePuller1</Pieces>
-		<Pieces>GW_GroupRoleMarkNPC1</Pieces>
-	</TileLayoutBox>
-	<Button item="GW_GroupRoleTank2">
-		<ScreenID>GroupRoleTank2</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_TankSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>22</CX>
-			<CY>22</CY>
-		</Size>
-	</Button>
-	<Button item="GW_GroupRoleAssist2">
-		<ScreenID>GroupRoleAssist2</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_AssistSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-	</Button>
-	<Button item="GW_GroupRolePuller2">
-		<ScreenID>GroupRolePuller2</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_PullerSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-	</Button>
-	<Button item="GW_GroupRoleMarkNPC2">
-		<ScreenID>GroupRoleMarkNPC2</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_MarkNPC</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-	</Button>
-	<TileLayoutBox item="GW_GroupRoles2">
-		<ScreenID>GW_GroupRoles2</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<TopAnchorOffset>28</TopAnchorOffset>
-		<BottomAnchorOffset>74</BottomAnchorOffset>
-		<LeftAnchorOffset>1120</LeftAnchorOffset>
-		<RightAnchorOffset>1072</RightAnchorOffset>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<Style_Transparent>true</Style_Transparent>
-		<Spacing>2</Spacing>
-		<SecondarySpacing>2</SecondarySpacing>
-		<HorizontalFirst>false</HorizontalFirst>
-		<FirstPieceTemplate>true</FirstPieceTemplate>
-		<Pieces>GW_GroupRoleTank2</Pieces>
-		<Pieces>GW_GroupRoleAssist2</Pieces>
-		<Pieces>GW_GroupRolePuller2</Pieces>
-		<Pieces>GW_GroupRoleMarkNPC2</Pieces>
-	</TileLayoutBox>
-	<Button item="GW_GroupRoleTank3">
-		<ScreenID>GroupRoleTank3</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_TankSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>22</CX>
-			<CY>22</CY>
-		</Size>
-	</Button>
-	<Button item="GW_GroupRoleAssist3">
-		<ScreenID>GroupRoleAssist3</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_AssistSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-	</Button>
-	<Button item="GW_GroupRolePuller3">
-		<ScreenID>GroupRolePuller3</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_PullerSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-	</Button>
-	<Button item="GW_GroupRoleMarkNPC3">
-		<ScreenID>GroupRoleMarkNPC3</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_MarkNPCSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-	</Button>
-	<TileLayoutBox item="GW_GroupRoles3">
-		<ScreenID>GW_GroupRoles3</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<TopAnchorOffset>28</TopAnchorOffset>
-		<BottomAnchorOffset>74</BottomAnchorOffset>
-		<LeftAnchorOffset>842</LeftAnchorOffset>
-		<RightAnchorOffset>794</RightAnchorOffset>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<Style_Transparent>true</Style_Transparent>
-		<Spacing>2</Spacing>
-		<SecondarySpacing>2</SecondarySpacing>
-		<HorizontalFirst>false</HorizontalFirst>
-		<FirstPieceTemplate>true</FirstPieceTemplate>
-		<Pieces>GW_GroupRoleTank3</Pieces>
-		<Pieces>GW_GroupRoleAssist3</Pieces>
-		<Pieces>GW_GroupRolePuller3</Pieces>
-		<Pieces>GW_GroupRoleMarkNPC3</Pieces>
-	</TileLayoutBox>
-	<Button item="GW_GroupRoleTank4">
-		<ScreenID>GroupRoleTank4</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_TankSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>22</CX>
-			<CY>22</CY>
-		</Size>
-	</Button>
-	<Button item="GW_GroupRoleAssist4">
-		<ScreenID>GroupRoleAssist4</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_AssistSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-	</Button>
-	<Button item="GW_GroupRolePuller4">
-		<ScreenID>GroupRolePuller4</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_PullerSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-	</Button>
-	<Button item="GW_GroupRoleMarkNPC4">
-		<ScreenID>GroupRoleMarkNPC4</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_MarkNPCSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-	</Button>
-	<TileLayoutBox item="GW_GroupRoles4">
-		<ScreenID>GW_GroupRoles4</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<TopAnchorOffset>28</TopAnchorOffset>
-		<BottomAnchorOffset>74</BottomAnchorOffset>
-		<LeftAnchorOffset>562</LeftAnchorOffset>
-		<RightAnchorOffset>514</RightAnchorOffset>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<Style_Transparent>true</Style_Transparent>
-		<Spacing>2</Spacing>
-		<SecondarySpacing>2</SecondarySpacing>
-		<HorizontalFirst>false</HorizontalFirst>
-		<FirstPieceTemplate>true</FirstPieceTemplate>
-		<Pieces>GW_GroupRoleTank4</Pieces>
-		<Pieces>GW_GroupRoleAssist4</Pieces>
-		<Pieces>GW_GroupRolePuller4</Pieces>
-		<Pieces>GW_GroupRoleMarkNPC4</Pieces>
-	</TileLayoutBox>
-	<Button item="GW_GroupRoleTank5">
-		<ScreenID>GroupRoleTank5</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_TankSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>22</CX>
-			<CY>22</CY>
-		</Size>
-	</Button>
-	<Button item="GW_GroupRoleAssist5">
-		<ScreenID>GroupRoleAssist5</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_AssistSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-	</Button>
-	<Button item="GW_GroupRolePuller5">
-		<ScreenID>GroupRolePuller5</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_PullerSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-	</Button>
-	<Button item="GW_GroupRoleMarkNPC5">
-		<ScreenID>GroupRoleMarkNPC5</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Style_Transparent>false</Style_Transparent>
-		<Style_Checkbox>false</Style_Checkbox>
-		<ButtonDrawTemplate>
-			<NormalDecal>A_MarkNPCSm</NormalDecal>
-		</ButtonDrawTemplate>
-		<DecalSize>
-			<CX>22</CX>
-			<CY>22</CY>
-		</DecalSize>
-		<AutoStretch>false</AutoStretch>
-		<Size>
-			<CX>50</CX>
-			<CY>50</CY>
-		</Size>
-	</Button>
-	<TileLayoutBox item="GW_GroupRoles5">
-		<ScreenID>GW_GroupRoles5</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<TopAnchorOffset>28</TopAnchorOffset>
-		<BottomAnchorOffset>74</BottomAnchorOffset>
-		<LeftAnchorOffset>282</LeftAnchorOffset>
-		<RightAnchorOffset>234</RightAnchorOffset>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<Style_Transparent>true</Style_Transparent>
-		<Spacing>2</Spacing>
-		<SecondarySpacing>2</SecondarySpacing>
-		<HorizontalFirst>false</HorizontalFirst>
-		<FirstPieceTemplate>true</FirstPieceTemplate>
-		<Pieces>GW_GroupRoleTank5</Pieces>
-		<Pieces>GW_GroupRoleAssist5</Pieces>
-		<Pieces>GW_GroupRolePuller5</Pieces>
-		<Pieces>GW_GroupRoleMarkNPC5</Pieces>
-	</TileLayoutBox>
-	<Label item="GW_AggroPctPlayer1">
-		<ScreenID>GW_AggroPctPlayer1</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Font>6</Font>
-		<Text>78</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<EQType>309</EQType>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>true</AlignCenter>
-		<TopAnchorOffset>52</TopAnchorOffset>
-		<BottomAnchorOffset>74</BottomAnchorOffset>
-		<LeftAnchorOffset>1370</LeftAnchorOffset>
-		<RightAnchorOffset>1334</RightAnchorOffset>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-	</Label>
-	<Label item="GW_AggroPctPlayer2">
-		<ScreenID>GW_AggroPctPlayer2</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Font>6</Font>
-		<Text>78</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<EQType>310</EQType>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>true</AlignCenter>
-		<TopAnchorOffset>52</TopAnchorOffset>
-		<BottomAnchorOffset>74</BottomAnchorOffset>
-		<LeftAnchorOffset>1092</LeftAnchorOffset>
-		<RightAnchorOffset>1056</RightAnchorOffset>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-	</Label>
-	<Label item="GW_AggroPctPlayer3">
-		<ScreenID>GW_AggroPctPlayer3</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Font>6</Font>
-		<Text>78</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<EQType>311</EQType>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>true</AlignCenter>
-		<TopAnchorOffset>52</TopAnchorOffset>
-		<BottomAnchorOffset>74</BottomAnchorOffset>
-		<LeftAnchorOffset>814</LeftAnchorOffset>
-		<RightAnchorOffset>778</RightAnchorOffset>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-	</Label>
-	<Label item="GW_AggroPctPlayer4">
-		<ScreenID>GW_AggroPctPlayer4</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Font>6</Font>
-		<Text>78</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<EQType>312</EQType>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>true</AlignCenter>
-		<TopAnchorOffset>52</TopAnchorOffset>
-		<BottomAnchorOffset>74</BottomAnchorOffset>
-		<LeftAnchorOffset>534</LeftAnchorOffset>
-		<RightAnchorOffset>498</RightAnchorOffset>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-	</Label>
-	<Label item="GW_AggroPctPlayer5">
-		<ScreenID>GW_AggroPctPlayer5</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Font>6</Font>
-		<Text>78</Text>
-		<TextColor>
-			<R>235</R>
-			<G>219</G>
-			<B>178</B>
-		</TextColor>
-		<EQType>313</EQType>
-		<NoWrap>true</NoWrap>
-		<AlignCenter>true</AlignCenter>
-		<TopAnchorOffset>52</TopAnchorOffset>
-		<BottomAnchorOffset>74</BottomAnchorOffset>
-		<LeftAnchorOffset>254</LeftAnchorOffset>
-		<RightAnchorOffset>218</RightAnchorOffset>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-	</Label>
-	<StaticAnimation item="GW_PetGaugeBackGround">
-		<ScreenID>PetGaugeBackGround</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>8</X>
-			<Y>-6</Y>
-		</Location>
-		<Size>
-			<CX>208</CX>
-			<CY>24</CY>
-		</Size>
-		<Animation>TW_PetGBack</Animation>
-	</StaticAnimation>
-	<Gauge item="GW_PetTargetHPGauge">
-		<ScreenID>PetTargetHPGauge</ScreenID>
-		<Font>6</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>14</X>
-			<Y>-6</Y>
-		</Location>
-		<Size>
-			<CX>186</CX>
-			<CY>28</CY>
-		</Size>
-		<GaugeOffsetX>0</GaugeOffsetX>
-		<GaugeOffsetY>2</GaugeOffsetY>
-		<Text>No Target</Text>
-		<TextOffsetX>2</TextOffsetX>
-		<TextOffsetY>0</TextOffsetY>
-		<TextColor>
-			<R>240</R>
-			<G>240</G>
-			<B>240</B>
-		</TextColor>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
-		<FillTint>
-			<R>240</R>
-			<G>0</G>
-			<B>0</B>
-		</FillTint>
-		<EQType>41</EQType>
-		<GaugeDrawTemplate>
-			<Fill>A_TargetGaugeFill</Fill>
-		</GaugeDrawTemplate>
-	</Gauge>
+
+	<!-- MAIN WINDOW DEFINITION -->
 	<Screen item="GroupWindow">
 		<ScreenID/>
 		<RelativePosition>false</RelativePosition>
@@ -2711,41 +966,25 @@
 			<Y>156</Y>
 		</Location>
 		<Size>
-			<!-- 745 -->
-			<CX>1398</CX>
-			<CY>84</CY>
+			<CX>1260</CX>
+			<CY>70</CY>
 		</Size>
 		<Text/>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference>Advanced Grouping Window</TooltipReference>
+		<TooltipReference>Group Window - Minimal variant</TooltipReference>
 		<DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
 		<Style_Titlebar>false</Style_Titlebar>
 		<Style_Closebox>false</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
 		<Style_Border>false</Style_Border>
 		<Style_Sizable>false</Style_Sizable>
-		<Pieces>A_Gauge_bg01</Pieces>
-		<Pieces>A_Gauge_bg02</Pieces>
-		<Pieces>A_Gauge_bg03</Pieces>
-		<Pieces>A_Gauge_bg04</Pieces>
-		<Pieces>A_Gauge_bg05</Pieces>
-		<Pieces>CastDecalBox</Pieces>
-		<Pieces>Group_Cast</Pieces>
-		<Pieces>NowCastSpell</Pieces>
-		<!-- Advanced Gauge Testing -->
 		<Pieces>GW_Gauge1</Pieces>
 		<Pieces>GW_Gauge2</Pieces>
 		<Pieces>GW_Gauge3</Pieces>
 		<Pieces>GW_Gauge4</Pieces>
 		<Pieces>GW_Gauge5</Pieces>
-		<!-- Ends -->
-		<Pieces>GW_PetGauge1##</Pieces>
-		<Pieces>GW_PetGauge2##</Pieces>
-		<Pieces>GW_PetGauge3##</Pieces>
-		<Pieces>GW_PetGauge4##</Pieces>
-		<Pieces>GW_PetGauge5##</Pieces>
 		<Pieces>GW_ManaGauge1</Pieces>
 		<Pieces>GW_ManaGauge2</Pieces>
 		<Pieces>GW_ManaGauge3</Pieces>
@@ -2756,62 +995,20 @@
 		<Pieces>GW_STAGauge3</Pieces>
 		<Pieces>GW_STAGauge4</Pieces>
 		<Pieces>GW_STAGauge5</Pieces>
+		<Pieces>GW_PetGauge1##</Pieces>
+		<Pieces>GW_PetGauge2##</Pieces>
+		<Pieces>GW_PetGauge3##</Pieces>
+		<Pieces>GW_PetGauge4##</Pieces>
+		<Pieces>GW_PetGauge5##</Pieces>
 		<Pieces>GW_PlayerPercent1</Pieces>
-		<Pieces>GW_PercentFig1</Pieces>
 		<Pieces>GW_PlayerPercent2</Pieces>
-		<Pieces>GW_PercentFig2</Pieces>
 		<Pieces>GW_PlayerPercent3</Pieces>
-		<Pieces>GW_PercentFig3</Pieces>
 		<Pieces>GW_PlayerPercent4</Pieces>
-		<Pieces>GW_PercentFig4</Pieces>
 		<Pieces>GW_PlayerPercent5</Pieces>
-		<Pieces>GW_PercentFig5</Pieces>
-		<Pieces>GW_HPLabel1</Pieces>
-		<Pieces>GW_HPPercLabel1</Pieces>
-		<Pieces>GW_HPLabel2</Pieces>
-		<Pieces>GW_HPPercLabel2</Pieces>
-		<Pieces>GW_HPLabel3</Pieces>
-		<Pieces>GW_HPPercLabel3</Pieces>
-		<Pieces>GW_HPLabel4</Pieces>
-		<Pieces>GW_HPPercLabel4</Pieces>
-		<Pieces>GW_HPLabel5</Pieces>
-		<Pieces>GW_HPPercLabel5</Pieces>
-		<Pieces>GW_ManaLabel1</Pieces>
-		<Pieces>GW_ManaPercLabel1</Pieces>
-		<Pieces>GW_ManaLabel2</Pieces>
-		<Pieces>GW_ManaPercLabel2</Pieces>
-		<Pieces>GW_ManaLabel3</Pieces>
-		<Pieces>GW_ManaPercLabel3</Pieces>
-		<Pieces>GW_ManaLabel4</Pieces>
-		<Pieces>GW_ManaPercLabel4</Pieces>
-		<Pieces>GW_ManaLabel5</Pieces>
-		<Pieces>GW_ManaPercLabel5</Pieces>
-		<Pieces>GW_STALabel1</Pieces>
-		<Pieces>GW_STAPercLabel1</Pieces>
-		<Pieces>GW_STALabel2</Pieces>
-		<Pieces>GW_STAPercLabel2</Pieces>
-		<Pieces>GW_STALabel3</Pieces>
-		<Pieces>GW_STAPercLabel3</Pieces>
-		<Pieces>GW_STALabel4</Pieces>
-		<Pieces>GW_STAPercLabel4</Pieces>
-		<Pieces>GW_STALabel5</Pieces>
-		<Pieces>GW_STAPercLabel5</Pieces>
-		<Pieces>TileLayoutBox:GW_GroupRoles1</Pieces>
-		<Pieces>TileLayoutBox:GW_GroupRoles2</Pieces>
-		<Pieces>TileLayoutBox:GW_GroupRoles3</Pieces>
-		<Pieces>TileLayoutBox:GW_GroupRoles4</Pieces>
-		<Pieces>TileLayoutBox:GW_GroupRoles5</Pieces>
-		<Pieces>GW_AggroPctPlayer1</Pieces>
-		<Pieces>GW_AggroPctPlayer2</Pieces>
-		<Pieces>GW_AggroPctPlayer3</Pieces>
-		<Pieces>GW_AggroPctPlayer4</Pieces>
-		<Pieces>GW_AggroPctPlayer5</Pieces>
-		<Pieces>GW_LFGButton</Pieces>
 		<Pieces>GW_InviteButton</Pieces>
 		<Pieces>GW_DisbandButton</Pieces>
 		<Pieces>GW_FollowButton</Pieces>
 		<Pieces>GW_DeclineButton</Pieces>
-		<Pieces>GW_PetGaugeBackGround</Pieces>
-		<Pieces>GW_PetTargetHPGauge</Pieces>
+		<Pieces>GW_LFGButton</Pieces>
 	</Screen>
 </XML>

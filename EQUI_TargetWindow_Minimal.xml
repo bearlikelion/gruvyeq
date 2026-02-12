@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes"/>
+	<!--AYA UI Note...By Javin B`Dorn@Tunare-->
+	<!-- Minimal Variant - Simplified target window showing only target information -->
+	<!-- Original Xml Copyright (c) 2000 - 2006 Sony Online Entertaiment all rights reserved. -->
+	<!-- AYA UI Xml Code and Files ... -->
+	<!-- Copyright (c) 2002-2006 AYA NANASE all rights reserved. -->
+	<!-- Homepage http://jlamantia.com -->
+
+	<!-- TARGET HP GAUGE - Simplified and enlarged -->
+	<Gauge item="Target_HP">
+		<ScreenID>TargetHP</ScreenID>
+		<Font>4</Font>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>10</X>
+			<Y>25</Y>
+		</Location>
+		<Size>
+			<CX>500</CX>
+			<CY>20</CY>
+		</Size>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<TextOffsetY>-100</TextOffsetY>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference/>
+		<FillTint>
+			<R>168</R>
+			<G>153</G>
+			<B>132</B>
+		</FillTint>
+		<DrawLinesFill>false</DrawLinesFill>
+		<EQType>6</EQType>
+		<AlignCenter>false</AlignCenter>
+		<GaugeDrawTemplate>
+			<Fill>A_TargetGaugeFill2</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<!-- TARGET NAME -->
+	<Label item="Target_Name">
+		<ScreenID>TargetNameLabel</ScreenID>
+		<Font>5</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>10</X>
+			<Y>5</Y>
+		</Location>
+		<Text>Vishimtar the Fallen's corpse</Text>
+		<Size>
+			<CX>400</CX>
+			<CY>18</CY>
+		</Size>
+		<Text/>
+		<TextColor>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
+		</TextColor>
+		<EQType>28</EQType>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+	</Label>
+
+	<!-- TARGET HP PERCENTAGE -->
+	<Label item="Target_Percent">
+		<ScreenID>TargetPercentLabel</ScreenID>
+		<Font>5</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>470</X>
+			<Y>5</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>18</CY>
+		</Size>
+		<Text>100%</Text>
+		<TextColor>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
+		</TextColor>
+		<EQType>29</EQType>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<!-- PET INFO - Compact single line -->
+	<Label item="TW_PetName">
+		<ScreenID>TW_PetName</ScreenID>
+		<Font>4</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>10</X>
+			<Y>50</Y>
+		</Location>
+		<Text>Pet:</Text>
+		<Size>
+			<CX>60</CX>
+			<CY>12</CY>
+		</Size>
+		<Text/>
+		<TextColor>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
+		</TextColor>
+		<EQType>68</EQType>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+	</Label>
+
+	<!-- PET HP GAUGE - Compact -->
+	<Gauge item="TW_PetHealthGauge">
+		<ScreenID>TW_PetHealthGauge</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>75</X>
+			<Y>50</Y>
+		</Location>
+		<Size>
+			<CX>60</CX>
+			<CY>10</CY>
+		</Size>
+		<GaugeOffsetX>0</GaugeOffsetX>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<TextOffsetY>-100</TextOffsetY>
+		<FillTint>
+			<R>168</R>
+			<G>153</G>
+			<B>132</B>
+		</FillTint>
+		<EQType>16</EQType>
+		<GaugeDrawTemplate>
+			<Fill>AYAPetHealth</Fill>
+		</GaugeDrawTemplate>
+	</Gauge>
+
+	<!-- PET HP PERCENTAGE -->
+	<Label item="TW_PetHpPct">
+		<ScreenID>TW_PetHpPct</ScreenID>
+		<EQType>69</EQType>
+		<Font>4</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>140</X>
+			<Y>50</Y>
+		</Location>
+		<Size>
+			<CX>30</CX>
+			<CY>12</CY>
+		</Size>
+		<Text>100%</Text>
+		<TextColor>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<!-- BUFF ICON TEMPLATE -->
+	<Button item="Target_Buff_Template">
+		<ScreenID>TargetBuffSlot</ScreenID>
+		<Size>
+			<CX>12</CX>
+			<CY>12</CY>
+		</Size>
+		<Template>BDT_TargetBuff</Template>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<DecalOffset>
+			<X>1</X>
+			<Y>1</Y>
+		</DecalOffset>
+		<DecalSize>
+			<CX>10</CX>
+			<CY>10</CY>
+		</DecalSize>
+	</Button>
+
+	<!-- BUFF BUTTONS CONTAINER -->
+	<TileLayoutBox item="Target_Buttons">
+		<ScreenID>TargetBuffsButtons</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Transparent>true</Style_Transparent>
+		<Spacing>1</Spacing>
+		<SecondarySpacing>0</SecondarySpacing>
+		<HorizontalFirst>true</HorizontalFirst>
+		<AnchorToTop>true</AnchorToTop>
+		<AnchorToLeft>true</AnchorToLeft>
+		<FirstPieceTemplate>true</FirstPieceTemplate>
+		<Pieces>Target_Buff_Template</Pieces>
+	</TileLayoutBox>
+
+	<!-- BUFF WINDOW CONTAINER -->
+	<TileLayoutBox item="Target_BuffWindow">
+		<ScreenID>BuffWindow</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>10</LeftAnchorOffset>
+		<TopAnchorOffset>64</TopAnchorOffset>
+		<RightAnchorOffset>10</RightAnchorOffset>
+		<BottomAnchorOffset>16</BottomAnchorOffset>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<TopAnchortoTop>true</TopAnchortoTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference>Buffs on your target will show here</TooltipReference>
+		<DrawTemplate>WDT_InnerNew</DrawTemplate>
+		<Style_Titlebar>false</Style_Titlebar>
+		<Style_Closebox>false</Style_Closebox>
+		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>false</Style_Sizable>
+		<Spacing>1</Spacing>
+		<SecondarySpacing>1</SecondarySpacing>
+		<HorizontalFirst>true</HorizontalFirst>
+		<FirstPieceTemplate>true</FirstPieceTemplate>
+		<Pieces>TileLayoutBox:Target_Buttons</Pieces>
+	</TileLayoutBox>
+
+	<!-- HIDDEN LABELS (Required by EQ but not displayed) -->
+	<Label item="Target_At">
+		<ScreenID>TargetAtLabel</ScreenID>
+		<Font>4</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>-200</X>
+			<Y>-200</Y>
+		</Location>
+		<Size>
+			<CX>18</CX>
+			<CY>20</CY>
+		</Size>
+		<Text>%</Text>
+		<TextColor>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+
+	<Label item="Target_HPLabel">
+		<ScreenID>HPLabel</ScreenID>
+		<EQType>29</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>-200</X>
+			<Y>-200</Y>
+		</Location>
+		<Size>
+			<CX>1</CX>
+			<CY>1</CY>
+		</Size>
+		<Text>Playername123456</Text>
+		<TextColor>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<Label item="Target_HPPercLabel">
+		<ScreenID>HPPercLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>-200</X>
+			<Y>-200</Y>
+		</Location>
+		<Size>
+			<CX>1</CX>
+			<CY>1</CY>
+		</Size>
+		<Text>%</Text>
+		<TextColor>
+			<R>235</R>
+			<G>219</G>
+			<B>178</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+
+	<!-- TARGET BOX ANIMATIONS (Required by game but hidden) -->
+	<StaticAnimation item="A_TargetBoxStaticAnimTop">
+		<ScreenID>A_TargetBoxStaticAnimTop</ScreenID>
+		<Animation>A_TargetBoxTop</Animation>
+		<Location>
+			<X>-200</X>
+			<Y>-200</Y>
+		</Location>
+		<Size>
+			<CX>1</CX>
+			<CY>1</CY>
+		</Size>
+		<AutoDraw>false</AutoDraw>
+	</StaticAnimation>
+
+	<StaticAnimation item="A_TargetBoxStaticAnimBottom">
+		<ScreenID>A_TargetBoxStaticAnimBottom</ScreenID>
+		<Animation>A_TargetBoxBottom</Animation>
+		<Location>
+			<X>-200</X>
+			<Y>-200</Y>
+		</Location>
+		<Size>
+			<CX>1</CX>
+			<CY>1</CY>
+		</Size>
+		<AutoDraw>false</AutoDraw>
+	</StaticAnimation>
+
+	<StaticAnimation item="A_TargetBoxStaticAnimLeft">
+		<ScreenID>A_TargetBoxStaticAnimLeft</ScreenID>
+		<Animation>A_TargetBoxLeft</Animation>
+		<Location>
+			<X>-200</X>
+			<Y>-200</Y>
+		</Location>
+		<Size>
+			<CX>1</CX>
+			<CY>1</CY>
+		</Size>
+		<AutoDraw>false</AutoDraw>
+	</StaticAnimation>
+
+	<StaticAnimation item="A_TargetBoxStaticAnimRight">
+		<ScreenID>A_TargetBoxStaticAnimRight</ScreenID>
+		<Animation>A_TargetBoxRight</Animation>
+		<Location>
+			<X>-200</X>
+			<Y>-200</Y>
+		</Location>
+		<Size>
+			<CX>1</CX>
+			<CY>1</CY>
+		</Size>
+		<AutoDraw>false</AutoDraw>
+	</StaticAnimation>
+
+	<StaticAnimation item="A_TargetBoxStaticAnimFill">
+		<ScreenID>A_TargetBoxStaticAnimFill</ScreenID>
+		<Animation>A_TargetBox</Animation>
+		<Location>
+			<X>-200</X>
+			<Y>-200</Y>
+		</Location>
+		<Size>
+			<CX>1</CX>
+			<CY>1</CY>
+		</Size>
+		<AutoDraw>false</AutoDraw>
+	</StaticAnimation>
+
+	<Ui2DAnimation item="A_TargetBox">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>TargetBox.dds</Texture>
+			<Location>
+				<X>0</X>
+				<Y>29</Y>
+			</Location>
+			<Size>
+				<CX>256</CX>
+				<CY>32</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+
+	<!-- TARGET BOX ANIMATIONS (Required by template) -->
+	<TextureInfo item="TargetBox.dds">
+		<Size>
+			<CX>256</CX>
+			<CY>32</CY>
+		</Size>
+	</TextureInfo>
+
+	<Ui2DAnimation item="A_TargetBoxTop">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>TargetBox.dds</Texture>
+			<Location>
+				<X>1</X>
+				<Y>1</Y>
+			</Location>
+			<Size>
+				<CX>114</CX>
+				<CY>2</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+
+	<Ui2DAnimation item="A_TargetBoxBottom">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>TargetBox.dds</Texture>
+			<Location>
+				<X>1</X>
+				<Y>26</Y>
+			</Location>
+			<Size>
+				<CX>114</CX>
+				<CY>2</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+
+	<Ui2DAnimation item="A_TargetBoxLeft">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>TargetBox.dds</Texture>
+			<Location>
+				<X>1</X>
+				<Y>3</Y>
+			</Location>
+			<Size>
+				<CX>3</CX>
+				<CY>23</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+
+	<Ui2DAnimation item="A_TargetBoxRight">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>TargetBox.dds</Texture>
+			<Location>
+				<X>111</X>
+				<Y>3</Y>
+			</Location>
+			<Size>
+				<CX>3</CX>
+				<CY>23</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+
+	<Ui2DAnimation item="A_TargetBoxFill">
+		<Cycle>false</Cycle>
+		<Frames>
+			<Texture>TargetBox.dds</Texture>
+			<Location>
+				<X>4</X>
+				<Y>4</Y>
+			</Location>
+			<Size>
+				<CX>107</CX>
+				<CY>21</CY>
+			</Size>
+		</Frames>
+	</Ui2DAnimation>
+
+	<!-- MAIN WINDOW DEFINITION -->
+	<Screen item="TargetWindow">
+		<ScreenID/>
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>3060</X>
+			<Y>1850</Y>
+		</Location>
+		<Size>
+			<CX>520</CX>
+			<CY>80</CY>
+		</Size>
+		<TextColor>
+			<R>55</R>
+			<G>55</G>
+			<B>55</B>
+		</TextColor>
+		<Text/>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference>Your Current Target - Minimal variant</TooltipReference>
+		<DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
+		<Style_Titlebar>false</Style_Titlebar>
+		<Style_Closebox>false</Style_Closebox>
+		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Border>false</Style_Border>
+		<Style_Sizable>false</Style_Sizable>
+		<Pieces>Target_HP</Pieces>
+		<Pieces>Target_Name</Pieces>
+		<Pieces>Target_Percent</Pieces>
+		<Pieces>TW_PetHealthGauge</Pieces>
+		<Pieces>TW_PetName</Pieces>
+		<Pieces>TW_PetHpPct</Pieces>
+		<Pieces>TileLayoutBox:Target_BuffWindow</Pieces>
+		<Pieces>Target_HPLabel</Pieces>
+		<Pieces>Target_HPPercLabel</Pieces>
+		<Pieces>A_TargetBoxStaticAnimTop</Pieces>
+		<Pieces>A_TargetBoxStaticAnimBottom</Pieces>
+		<Pieces>A_TargetBoxStaticAnimLeft</Pieces>
+		<Pieces>A_TargetBoxStaticAnimRight</Pieces>
+		<Pieces>A_TargetBoxStaticAnimFill</Pieces>
+	</Screen>
+</XML>
