@@ -893,6 +893,7 @@
 		<Pieces>Label:MMGW_TimeLeftText</Pieces>
 		<Pieces>Listbox:MMGW_StanceListBox</Pieces>
 		<Pieces>Button:MMGW_SetActiveStanceButton</Pieces>
+		<Pieces>Button:MMGW_CallForAssistButton</Pieces>
 		<Pieces>Button:MMGW_SuspendButton</Pieces>
 	</Page>
 	<Page item="MMGW_SwitchPage">

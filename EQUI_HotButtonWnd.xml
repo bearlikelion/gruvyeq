@@ -1143,24 +1143,7 @@
 	</Ui2DAnimation>
 	<SpellGem item="HB_SpellGem">
 		<ScreenID>HB_SpellGem</ScreenID>
-		<Location>
-			<X>0</X>
-			<Y>2</Y>
-		</Location>
-		<Size>
-			<CX>74</CX>
-			<CY>64</CY>
-		</Size>
-		<SpellGemDrawTemplate>
-			<Holder>A_SpellGemHolder</Holder>
-			<Background>A_SpellGemBackground</Background>
-			<Highlight>A_SpellGemHighlight</Highlight>
-		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>16</SpellIconOffsetX>
-		<SpellIconOffsetY>12</SpellIconOffsetY>
-	</SpellGem>
-	<InvSlot item="HB_InvSlot">
-		<ScreenID>HB_InvSlot</ScreenID>
+		<Font>6</Font>
 		<Location>
 			<X>0</X>
 			<Y>0</Y>
@@ -1168,6 +1151,28 @@
 		<Size>
 			<CX>96</CX>
 			<CY>88</CY>
+		</Size>
+		<ButtonDrawTemplate>
+			<NormalDecal>BuffIcons</NormalDecal>
+		</ButtonDrawTemplate>
+		<DecalOffset>
+			<X>0</X>
+			<Y>0</Y>
+		</DecalOffset>
+		<DecalSize>
+			<CX>96</CX>
+			<CY>88</CY>
+		</DecalSize>
+	</SpellGem>
+	<InvSlot item="HB_InvSlot">
+		<ScreenID>HB_InvSlot</ScreenID>
+		<Location>
+			<X>8</X>
+			<Y>4</Y>
+		</Location>
+		<Size>
+			<CX>80</CX>
+			<CY>80</CY>
 		</Size>
 		<Background>A_RecessedBox</Background>
 		<EQType>-2</EQType>
@@ -1187,11 +1192,11 @@
 			<B>178</B>
 		</TextColor>
 		<DecalOffset>
-			<X>4</X>
+			<X>8</X>
 			<Y>4</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>88</CX>
+			<CX>80</CX>
 			<CY>80</CY>
 		</DecalSize>
 		<SpellGem>HB_SpellGem</SpellGem>
@@ -1219,11 +1224,11 @@
 			<B>178</B>
 		</TextColor>
 		<DecalOffset>
-			<X>4</X>
+			<X>8</X>
 			<Y>4</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>88</CX>
+			<CX>80</CX>
 			<CY>80</CY>
 		</DecalSize>
 		<SpellGem>HB_SpellGem</SpellGem>
@@ -1251,11 +1256,11 @@
 			<B>178</B>
 		</TextColor>
 		<DecalOffset>
-			<X>4</X>
+			<X>8</X>
 			<Y>4</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>88</CX>
+			<CX>80</CX>
 			<CY>80</CY>
 		</DecalSize>
 		<SpellGem>HB_SpellGem</SpellGem>
@@ -1283,11 +1288,11 @@
 			<B>178</B>
 		</TextColor>
 		<DecalOffset>
-			<X>4</X>
+			<X>8</X>
 			<Y>4</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>88</CX>
+			<CX>80</CX>
 			<CY>80</CY>
 		</DecalSize>
 		<SpellGem>HB_SpellGem</SpellGem>
@@ -1315,11 +1320,11 @@
 			<B>178</B>
 		</TextColor>
 		<DecalOffset>
-			<X>4</X>
+			<X>8</X>
 			<Y>4</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>88</CX>
+			<CX>80</CX>
 			<CY>80</CY>
 		</DecalSize>
 		<SpellGem>HB_SpellGem</SpellGem>
@@ -1347,11 +1352,11 @@
 			<B>178</B>
 		</TextColor>
 		<DecalOffset>
-			<X>4</X>
+			<X>8</X>
 			<Y>4</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>88</CX>
+			<CX>80</CX>
 			<CY>80</CY>
 		</DecalSize>
 		<SpellGem>HB_SpellGem</SpellGem>
@@ -1379,11 +1384,11 @@
 			<B>178</B>
 		</TextColor>
 		<DecalOffset>
-			<X>4</X>
+			<X>8</X>
 			<Y>4</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>88</CX>
+			<CX>80</CX>
 			<CY>80</CY>
 		</DecalSize>
 		<SpellGem>HB_SpellGem</SpellGem>
@@ -1411,11 +1416,11 @@
 			<B>178</B>
 		</TextColor>
 		<DecalOffset>
-			<X>4</X>
+			<X>8</X>
 			<Y>4</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>88</CX>
+			<CX>80</CX>
 			<CY>80</CY>
 		</DecalSize>
 		<SpellGem>HB_SpellGem</SpellGem>
@@ -1443,11 +1448,11 @@
 			<B>178</B>
 		</TextColor>
 		<DecalOffset>
-			<X>4</X>
+			<X>8</X>
 			<Y>4</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>88</CX>
+			<CX>80</CX>
 			<CY>80</CY>
 		</DecalSize>
 		<SpellGem>HB_SpellGem</SpellGem>
@@ -1475,11 +1480,11 @@
 			<B>178</B>
 		</TextColor>
 		<DecalOffset>
-			<X>4</X>
+			<X>8</X>
 			<Y>4</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>88</CX>
+			<CX>80</CX>
 			<CY>80</CY>
 		</DecalSize>
 		<SpellGem>HB_SpellGem</SpellGem>
@@ -1507,11 +1512,11 @@
 			<B>178</B>
 		</TextColor>
 		<DecalOffset>
-			<X>4</X>
+			<X>8</X>
 			<Y>4</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>88</CX>
+			<CX>80</CX>
 			<CY>80</CY>
 		</DecalSize>
 		<SpellGem>HB_SpellGem</SpellGem>
@@ -1539,11 +1544,11 @@
 			<B>178</B>
 		</TextColor>
 		<DecalOffset>
-			<X>4</X>
+			<X>8</X>
 			<Y>4</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>88</CX>
+			<CX>80</CX>
 			<CY>80</CY>
 		</DecalSize>
 		<SpellGem>HB_SpellGem</SpellGem>

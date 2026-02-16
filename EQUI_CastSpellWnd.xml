@@ -28,6 +28,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell1">
 		<ScreenID>CSPW_Spell1</ScreenID>
@@ -43,6 +47,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell2">
 		<ScreenID>CSPW_Spell2</ScreenID>
@@ -58,6 +66,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell3">
 		<ScreenID>CSPW_Spell3</ScreenID>
@@ -73,6 +85,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell4">
 		<ScreenID>CSPW_Spell4</ScreenID>
@@ -88,6 +104,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell5">
 		<ScreenID>CSPW_Spell5</ScreenID>
@@ -103,6 +123,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell6">
 		<ScreenID>CSPW_Spell6</ScreenID>
@@ -118,6 +142,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell7">
 		<ScreenID>CSPW_Spell7</ScreenID>
@@ -133,6 +161,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell8">
 		<ScreenID>CSPW_Spell8</ScreenID>
@@ -148,6 +180,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell9">
 		<ScreenID>CSPW_Spell9</ScreenID>
@@ -163,6 +199,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell10">
 		<ScreenID>CSPW_Spell10</ScreenID>
@@ -178,6 +218,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell11">
 		<ScreenID>CSPW_Spell11</ScreenID>
@@ -193,6 +237,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell12">
 		<ScreenID>CSPW_Spell12</ScreenID>
@@ -208,6 +256,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell13">
 		<ScreenID>CSPW_Spell13</ScreenID>
@@ -223,6 +275,10 @@
 		</SpellGemDrawTemplate>
 		<SpellIconOffsetX>22</SpellIconOffsetX>
 		<SpellIconOffsetY>8</SpellIconOffsetY>
+		<SpellIconSize>
+			<CX>52</CX>
+			<CY>52</CY>
+		</SpellIconSize>
 	</SpellGem>
 	<Label item="CSPW_BookSpacer">
 		<ScreenID>CSPW_BookSpacer</ScreenID>
